@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(242, 251, 250);
+    color: black;
+    padding: 0.5rem;
+    justify-items: center;
+}
+
+.main{
+    width: 90%;
+    height: 110vh;
+    background-color: rgba(235, 232, 229, 0.562);
+    border-radius: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    animation: float 5s ease-in-out infinite;
+   
+}
+.main h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+     animation: bounceIn 1s ease-in-out;
+}
+.main p{
+    text-align: center;
+    font-size: 200;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    width: 100vh;
+    justify-self: center;
+    margin-top: 0;
+    padding: 0;
+}
+.main p span{
+    opacity: 0.5;
+}
+.summer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+
+}
+.summer img{
+    width: 10vh;
+    height: 10vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.summer h3,h4{
+    margin: 0;
+    text-align: left;
+    flex-direction: column;
+}
+.summer h3{
+    font-size: 1.5rem;
+    font-size: 600;
+}
+.summer h4{
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.sumip h1{
+    font-size: 10.5rem;
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+    animation: glow 10s ease-in-out infinite alternate;
+}
+.image-right {
+  position: absolute;
+  right: 15%;
+  top: 27%;
+}
+.image-right img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.image-left {
+  position: absolute;
+  left: 15%;
+  top: 45%;
+  transform: translateY(70%);
+}
+.image-left img {
+  width: 220px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.image-left img, 
+.image-right img {
+  animation: float 5s ease-in-out infinite;
+}
+.about-section{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+.paragraph p{
+    width: 40%;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    opacity: 0.4;
+}
+.icon{
+    padding: 1.5rem;
+    justify-self: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+.icon1:hover{
+    color: #1877F2;
+}
+.icon2:hover{
+  color: #15202b;
+}
+.icon3:hover{
+    color: #25d366;
+}
+.icon4:hover{
+    color:#E1306C;
+}
+.icon5:hover{
+    color: #053eff;
+}
+.buycoffee {
+  position: absolute;
+  bottom: 30px; 
+  right: 150px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.buycoffee img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+  rotate: -10deg;
+}
+.buycoffee h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes glow {
+  0% { box-shadow: 0 0 20px rgba(255, 220, 180, 0.2); }
+  100% { box-shadow: 0 0 60px rgba(255, 220, 180, 0.5); }
+}
+@keyframes bounceIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
